@@ -1,0 +1,2397 @@
+No.     Time           Source                Destination           Protocol Length Info
+    334 109.230914     Google_aa:09:6a (Pixel 7 Pro) TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) ATT      17     Sent Write Request, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 334: 17 bytes on wire (136 bits), 17 bytes captured (136 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:18:50.712492000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:18:50.712492000 UTC
+    Epoch Arrival Time: 1720253930.712492000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 18.542569000 seconds]
+    [Time delta from previous displayed frame: 18.610037000 seconds]
+    [Time since reference or first frame: 109.230914000 seconds]
+    Frame Number: 334
+    Frame Length: 17 bytes (136 bits)
+    Capture Length: 17 bytes (136 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Sent (0)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+Bluetooth HCI H4
+    [Direction: Sent (0x00)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..00 .... .... .... = PB Flag: First Non-automatically Flushable Packet (0)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 12
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Source Device Name: Pixel 7 Pro]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination Device Name: Pm_USSE_F07A0]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 8
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0010 = Method: Write Request (0x12)
+    Handle: 0x0025 (Unknown: Unknown)
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    Value: aa070400ff
+
+0000  02 41 00 0c 00 08 00 04 00 12 25 00 aa 07 04 00   .A........%.....
+0010  ff                                                .
+
+No.     Time           Source                Destination           Protocol Length Info
+    335 109.319129     TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) Google_aa:09:6a (Pixel 7 Pro) ATT      10     Rcvd Write Response, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 335: 10 bytes on wire (80 bits), 10 bytes captured (80 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:18:50.800707000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:18:50.800707000 UTC
+    Epoch Arrival Time: 1720253930.800707000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.088215000 seconds]
+    [Time delta from previous displayed frame: 0.088215000 seconds]
+    [Time since reference or first frame: 109.319129000 seconds]
+    Frame Number: 335
+    Frame Length: 10 bytes (80 bits)
+    Capture Length: 10 bytes (80 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Received (1)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+Bluetooth HCI H4
+    [Direction: Rcvd (0x01)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..10 .... .... .... = PB Flag: First Automatically Flushable Packet (2)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 5
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Source Device Name: Pm_USSE_F07A0]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination Device Name: Pixel 7 Pro]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 1
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Response (0x13)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0011 = Method: Write Response (0x13)
+    [Handle: 0x0025 (Unknown: Unknown)]
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    [Request in Frame: 334]
+
+0000  02 41 20 05 00 01 00 04 00 13                     .A .......
+
+No.     Time           Source                Destination           Protocol Length Info
+    337 142.540799     Google_aa:09:6a (Pixel 7 Pro) TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) ATT      17     Sent Write Request, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 337: 17 bytes on wire (136 bits), 17 bytes captured (136 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:19:24.022377000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:19:24.022377000 UTC
+    Epoch Arrival Time: 1720253964.022377000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 33.175941000 seconds]
+    [Time delta from previous displayed frame: 33.221670000 seconds]
+    [Time since reference or first frame: 142.540799000 seconds]
+    Frame Number: 337
+    Frame Length: 17 bytes (136 bits)
+    Capture Length: 17 bytes (136 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Sent (0)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+Bluetooth HCI H4
+    [Direction: Sent (0x00)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..00 .... .... .... = PB Flag: First Non-automatically Flushable Packet (0)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 12
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Source Device Name: Pixel 7 Pro]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination Device Name: Pm_USSE_F07A0]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 8
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0010 = Method: Write Request (0x12)
+    Handle: 0x0025 (Unknown: Unknown)
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    Value: aa0701ffff
+
+0000  02 41 00 0c 00 08 00 04 00 12 25 00 aa 07 01 ff   .A........%.....
+0010  ff                                                .
+
+No.     Time           Source                Destination           Protocol Length Info
+    338 142.619551     TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) Google_aa:09:6a (Pixel 7 Pro) ATT      10     Rcvd Write Response, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 338: 10 bytes on wire (80 bits), 10 bytes captured (80 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:19:24.101129000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:19:24.101129000 UTC
+    Epoch Arrival Time: 1720253964.101129000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.078752000 seconds]
+    [Time delta from previous displayed frame: 0.078752000 seconds]
+    [Time since reference or first frame: 142.619551000 seconds]
+    Frame Number: 338
+    Frame Length: 10 bytes (80 bits)
+    Capture Length: 10 bytes (80 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Received (1)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+Bluetooth HCI H4
+    [Direction: Rcvd (0x01)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..10 .... .... .... = PB Flag: First Automatically Flushable Packet (2)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 5
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Source Device Name: Pm_USSE_F07A0]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination Device Name: Pixel 7 Pro]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 1
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Response (0x13)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0011 = Method: Write Response (0x13)
+    [Handle: 0x0025 (Unknown: Unknown)]
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    [Request in Frame: 337]
+
+0000  02 41 20 05 00 01 00 04 00 13                     .A .......
+
+No.     Time           Source                Destination           Protocol Length Info
+    340 193.949696     Google_aa:09:6a (Pixel 7 Pro) TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) ATT      17     Sent Write Request, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 340: 17 bytes on wire (136 bits), 17 bytes captured (136 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:20:15.431274000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:20:15.431274000 UTC
+    Epoch Arrival Time: 1720254015.431274000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 51.285858000 seconds]
+    [Time delta from previous displayed frame: 51.330145000 seconds]
+    [Time since reference or first frame: 193.949696000 seconds]
+    Frame Number: 340
+    Frame Length: 17 bytes (136 bits)
+    Capture Length: 17 bytes (136 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Sent (0)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+Bluetooth HCI H4
+    [Direction: Sent (0x00)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..00 .... .... .... = PB Flag: First Non-automatically Flushable Packet (0)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 12
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Source Device Name: Pixel 7 Pro]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination Device Name: Pm_USSE_F07A0]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 8
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0010 = Method: Write Request (0x12)
+    Handle: 0x0025 (Unknown: Unknown)
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    Value: aa070300ff
+
+0000  02 41 00 0c 00 08 00 04 00 12 25 00 aa 07 03 00   .A........%.....
+0010  ff                                                .
+
+No.     Time           Source                Destination           Protocol Length Info
+    341 194.010874     TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) Google_aa:09:6a (Pixel 7 Pro) ATT      10     Rcvd Write Response, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 341: 10 bytes on wire (80 bits), 10 bytes captured (80 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:20:15.492452000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:20:15.492452000 UTC
+    Epoch Arrival Time: 1720254015.492452000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.061178000 seconds]
+    [Time delta from previous displayed frame: 0.061178000 seconds]
+    [Time since reference or first frame: 194.010874000 seconds]
+    Frame Number: 341
+    Frame Length: 10 bytes (80 bits)
+    Capture Length: 10 bytes (80 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Received (1)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+Bluetooth HCI H4
+    [Direction: Rcvd (0x01)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..10 .... .... .... = PB Flag: First Automatically Flushable Packet (2)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 5
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Source Device Name: Pm_USSE_F07A0]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination Device Name: Pixel 7 Pro]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 1
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Response (0x13)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0011 = Method: Write Response (0x13)
+    [Handle: 0x0025 (Unknown: Unknown)]
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    [Request in Frame: 340]
+
+0000  02 41 20 05 00 01 00 04 00 13                     .A .......
+
+No.     Time           Source                Destination           Protocol Length Info
+    343 199.322201     Google_aa:09:6a (Pixel 7 Pro) TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) ATT      17     Sent Write Request, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 343: 17 bytes on wire (136 bits), 17 bytes captured (136 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:20:20.803779000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:20:20.803779000 UTC
+    Epoch Arrival Time: 1720254020.803779000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 5.266915000 seconds]
+    [Time delta from previous displayed frame: 5.311327000 seconds]
+    [Time since reference or first frame: 199.322201000 seconds]
+    Frame Number: 343
+    Frame Length: 17 bytes (136 bits)
+    Capture Length: 17 bytes (136 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Sent (0)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+Bluetooth HCI H4
+    [Direction: Sent (0x00)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..00 .... .... .... = PB Flag: First Non-automatically Flushable Packet (0)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 12
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Source Device Name: Pixel 7 Pro]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination Device Name: Pm_USSE_F07A0]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 8
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0010 = Method: Write Request (0x12)
+    Handle: 0x0025 (Unknown: Unknown)
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    Value: aa070200ff
+
+0000  02 41 00 0c 00 08 00 04 00 12 25 00 aa 07 02 00   .A........%.....
+0010  ff                                                .
+
+No.     Time           Source                Destination           Protocol Length Info
+    344 199.410590     TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) Google_aa:09:6a (Pixel 7 Pro) ATT      10     Rcvd Write Response, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 344: 10 bytes on wire (80 bits), 10 bytes captured (80 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:20:20.892168000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:20:20.892168000 UTC
+    Epoch Arrival Time: 1720254020.892168000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.088389000 seconds]
+    [Time delta from previous displayed frame: 0.088389000 seconds]
+    [Time since reference or first frame: 199.410590000 seconds]
+    Frame Number: 344
+    Frame Length: 10 bytes (80 bits)
+    Capture Length: 10 bytes (80 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Received (1)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+Bluetooth HCI H4
+    [Direction: Rcvd (0x01)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..10 .... .... .... = PB Flag: First Automatically Flushable Packet (2)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 5
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Source Device Name: Pm_USSE_F07A0]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination Device Name: Pixel 7 Pro]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 1
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Response (0x13)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0011 = Method: Write Response (0x13)
+    [Handle: 0x0025 (Unknown: Unknown)]
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    [Request in Frame: 343]
+
+0000  02 41 20 05 00 01 00 04 00 13                     .A .......
+
+No.     Time           Source                Destination           Protocol Length Info
+    346 215.096124     Google_aa:09:6a (Pixel 7 Pro) TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) ATT      17     Sent Write Request, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 346: 17 bytes on wire (136 bits), 17 bytes captured (136 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:20:36.577702000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:20:36.577702000 UTC
+    Epoch Arrival Time: 1720254036.577702000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 15.640920000 seconds]
+    [Time delta from previous displayed frame: 15.685534000 seconds]
+    [Time since reference or first frame: 215.096124000 seconds]
+    Frame Number: 346
+    Frame Length: 17 bytes (136 bits)
+    Capture Length: 17 bytes (136 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Sent (0)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+Bluetooth HCI H4
+    [Direction: Sent (0x00)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..00 .... .... .... = PB Flag: First Non-automatically Flushable Packet (0)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 12
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Source Device Name: Pixel 7 Pro]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination Device Name: Pm_USSE_F07A0]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 8
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0010 = Method: Write Request (0x12)
+    Handle: 0x0025 (Unknown: Unknown)
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    Value: aa0801c8ff
+
+0000  02 41 00 0c 00 08 00 04 00 12 25 00 aa 08 01 c8   .A........%.....
+0010  ff                                                .
+
+No.     Time           Source                Destination           Protocol Length Info
+    347 215.161388     TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) Google_aa:09:6a (Pixel 7 Pro) ATT      10     Rcvd Write Response, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 347: 10 bytes on wire (80 bits), 10 bytes captured (80 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:20:36.642966000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:20:36.642966000 UTC
+    Epoch Arrival Time: 1720254036.642966000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.065264000 seconds]
+    [Time delta from previous displayed frame: 0.065264000 seconds]
+    [Time since reference or first frame: 215.161388000 seconds]
+    Frame Number: 347
+    Frame Length: 10 bytes (80 bits)
+    Capture Length: 10 bytes (80 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Received (1)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+Bluetooth HCI H4
+    [Direction: Rcvd (0x01)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..10 .... .... .... = PB Flag: First Automatically Flushable Packet (2)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 5
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Source Device Name: Pm_USSE_F07A0]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination Device Name: Pixel 7 Pro]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 1
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Response (0x13)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0011 = Method: Write Response (0x13)
+    [Handle: 0x0025 (Unknown: Unknown)]
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    [Request in Frame: 346]
+
+0000  02 41 20 05 00 01 00 04 00 13                     .A .......
+
+No.     Time           Source                Destination           Protocol Length Info
+    349 245.743381     Google_aa:09:6a (Pixel 7 Pro) TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) ATT      17     Sent Write Request, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 349: 17 bytes on wire (136 bits), 17 bytes captured (136 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:21:07.224959000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:21:07.224959000 UTC
+    Epoch Arrival Time: 1720254067.224959000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 30.537613000 seconds]
+    [Time delta from previous displayed frame: 30.581993000 seconds]
+    [Time since reference or first frame: 245.743381000 seconds]
+    Frame Number: 349
+    Frame Length: 17 bytes (136 bits)
+    Capture Length: 17 bytes (136 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Sent (0)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+Bluetooth HCI H4
+    [Direction: Sent (0x00)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..00 .... .... .... = PB Flag: First Non-automatically Flushable Packet (0)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 12
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Source Device Name: Pixel 7 Pro]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination Device Name: Pm_USSE_F07A0]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 8
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0010 = Method: Write Request (0x12)
+    Handle: 0x0025 (Unknown: Unknown)
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    Value: aa0805c8ff
+
+0000  02 41 00 0c 00 08 00 04 00 12 25 00 aa 08 05 c8   .A........%.....
+0010  ff                                                .
+
+No.     Time           Source                Destination           Protocol Length Info
+    350 245.807597     TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) Google_aa:09:6a (Pixel 7 Pro) ATT      10     Rcvd Write Response, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 350: 10 bytes on wire (80 bits), 10 bytes captured (80 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:21:07.289175000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:21:07.289175000 UTC
+    Epoch Arrival Time: 1720254067.289175000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.064216000 seconds]
+    [Time delta from previous displayed frame: 0.064216000 seconds]
+    [Time since reference or first frame: 245.807597000 seconds]
+    Frame Number: 350
+    Frame Length: 10 bytes (80 bits)
+    Capture Length: 10 bytes (80 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Received (1)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+Bluetooth HCI H4
+    [Direction: Rcvd (0x01)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..10 .... .... .... = PB Flag: First Automatically Flushable Packet (2)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 5
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Source Device Name: Pm_USSE_F07A0]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination Device Name: Pixel 7 Pro]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 1
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Response (0x13)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0011 = Method: Write Response (0x13)
+    [Handle: 0x0025 (Unknown: Unknown)]
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    [Request in Frame: 349]
+
+0000  02 41 20 05 00 01 00 04 00 13                     .A .......
+
+No.     Time           Source                Destination           Protocol Length Info
+    352 251.541406     Google_aa:09:6a (Pixel 7 Pro) TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) ATT      17     Sent Write Request, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 352: 17 bytes on wire (136 bits), 17 bytes captured (136 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:21:13.022984000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:21:13.022984000 UTC
+    Epoch Arrival Time: 1720254073.022984000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 5.728847000 seconds]
+    [Time delta from previous displayed frame: 5.733809000 seconds]
+    [Time since reference or first frame: 251.541406000 seconds]
+    Frame Number: 352
+    Frame Length: 17 bytes (136 bits)
+    Capture Length: 17 bytes (136 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Sent (0)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+Bluetooth HCI H4
+    [Direction: Sent (0x00)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..00 .... .... .... = PB Flag: First Non-automatically Flushable Packet (0)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 12
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Source Device Name: Pixel 7 Pro]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination Device Name: Pm_USSE_F07A0]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 8
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0010 = Method: Write Request (0x12)
+    Handle: 0x0025 (Unknown: Unknown)
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    Value: aa0803c8ff
+
+0000  02 41 00 0c 00 08 00 04 00 12 25 00 aa 08 03 c8   .A........%.....
+0010  ff                                                .
+
+No.     Time           Source                Destination           Protocol Length Info
+    353 251.612175     TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) Google_aa:09:6a (Pixel 7 Pro) ATT      10     Rcvd Write Response, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 353: 10 bytes on wire (80 bits), 10 bytes captured (80 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:21:13.093753000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:21:13.093753000 UTC
+    Epoch Arrival Time: 1720254073.093753000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.070769000 seconds]
+    [Time delta from previous displayed frame: 0.070769000 seconds]
+    [Time since reference or first frame: 251.612175000 seconds]
+    Frame Number: 353
+    Frame Length: 10 bytes (80 bits)
+    Capture Length: 10 bytes (80 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Received (1)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+Bluetooth HCI H4
+    [Direction: Rcvd (0x01)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..10 .... .... .... = PB Flag: First Automatically Flushable Packet (2)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 5
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Source Device Name: Pm_USSE_F07A0]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination Device Name: Pixel 7 Pro]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 1
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Response (0x13)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0011 = Method: Write Response (0x13)
+    [Handle: 0x0025 (Unknown: Unknown)]
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    [Request in Frame: 352]
+
+0000  02 41 20 05 00 01 00 04 00 13                     .A .......
+
+No.     Time           Source                Destination           Protocol Length Info
+    355 260.656055     Google_aa:09:6a (Pixel 7 Pro) TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) ATT      17     Sent Write Request, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 355: 17 bytes on wire (136 bits), 17 bytes captured (136 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:21:22.137633000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:21:22.137633000 UTC
+    Epoch Arrival Time: 1720254082.137633000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 9.037885000 seconds]
+    [Time delta from previous displayed frame: 9.043880000 seconds]
+    [Time since reference or first frame: 260.656055000 seconds]
+    Frame Number: 355
+    Frame Length: 17 bytes (136 bits)
+    Capture Length: 17 bytes (136 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Sent (0)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+Bluetooth HCI H4
+    [Direction: Sent (0x00)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..00 .... .... .... = PB Flag: First Non-automatically Flushable Packet (0)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 12
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Source Device Name: Pixel 7 Pro]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination Device Name: Pm_USSE_F07A0]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 8
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0010 = Method: Write Request (0x12)
+    Handle: 0x0025 (Unknown: Unknown)
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    Value: aa0802c8ff
+
+0000  02 41 00 0c 00 08 00 04 00 12 25 00 aa 08 02 c8   .A........%.....
+0010  ff                                                .
+
+No.     Time           Source                Destination           Protocol Length Info
+    356 260.747196     TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) Google_aa:09:6a (Pixel 7 Pro) ATT      10     Rcvd Write Response, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 356: 10 bytes on wire (80 bits), 10 bytes captured (80 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:21:22.228774000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:21:22.228774000 UTC
+    Epoch Arrival Time: 1720254082.228774000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.091141000 seconds]
+    [Time delta from previous displayed frame: 0.091141000 seconds]
+    [Time since reference or first frame: 260.747196000 seconds]
+    Frame Number: 356
+    Frame Length: 10 bytes (80 bits)
+    Capture Length: 10 bytes (80 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Received (1)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+Bluetooth HCI H4
+    [Direction: Rcvd (0x01)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..10 .... .... .... = PB Flag: First Automatically Flushable Packet (2)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 5
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Source Device Name: Pm_USSE_F07A0]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination Device Name: Pixel 7 Pro]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 1
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Response (0x13)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0011 = Method: Write Response (0x13)
+    [Handle: 0x0025 (Unknown: Unknown)]
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    [Request in Frame: 355]
+
+0000  02 41 20 05 00 01 00 04 00 13                     .A .......
+
+No.     Time           Source                Destination           Protocol Length Info
+    358 271.072359     Google_aa:09:6a (Pixel 7 Pro) TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) ATT      17     Sent Write Request, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 358: 17 bytes on wire (136 bits), 17 bytes captured (136 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:21:32.553937000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:21:32.553937000 UTC
+    Epoch Arrival Time: 1720254092.553937000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 10.280923000 seconds]
+    [Time delta from previous displayed frame: 10.325163000 seconds]
+    [Time since reference or first frame: 271.072359000 seconds]
+    Frame Number: 358
+    Frame Length: 17 bytes (136 bits)
+    Capture Length: 17 bytes (136 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Sent (0)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+Bluetooth HCI H4
+    [Direction: Sent (0x00)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..00 .... .... .... = PB Flag: First Non-automatically Flushable Packet (0)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 12
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Source Device Name: Pixel 7 Pro]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination Device Name: Pm_USSE_F07A0]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 8
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0010 = Method: Write Request (0x12)
+    Handle: 0x0025 (Unknown: Unknown)
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    Value: aa0807c8ff
+
+0000  02 41 00 0c 00 08 00 04 00 12 25 00 aa 08 07 c8   .A........%.....
+0010  ff                                                .
+
+No.     Time           Source                Destination           Protocol Length Info
+    359 271.142335     TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) Google_aa:09:6a (Pixel 7 Pro) ATT      10     Rcvd Write Response, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 359: 10 bytes on wire (80 bits), 10 bytes captured (80 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:21:32.623913000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:21:32.623913000 UTC
+    Epoch Arrival Time: 1720254092.623913000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.069976000 seconds]
+    [Time delta from previous displayed frame: 0.069976000 seconds]
+    [Time since reference or first frame: 271.142335000 seconds]
+    Frame Number: 359
+    Frame Length: 10 bytes (80 bits)
+    Capture Length: 10 bytes (80 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Received (1)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+Bluetooth HCI H4
+    [Direction: Rcvd (0x01)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..10 .... .... .... = PB Flag: First Automatically Flushable Packet (2)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 5
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Source Device Name: Pm_USSE_F07A0]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination Device Name: Pixel 7 Pro]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 1
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Response (0x13)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0011 = Method: Write Response (0x13)
+    [Handle: 0x0025 (Unknown: Unknown)]
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    [Request in Frame: 358]
+
+0000  02 41 20 05 00 01 00 04 00 13                     .A .......
+
+No.     Time           Source                Destination           Protocol Length Info
+    361 286.873595     Google_aa:09:6a (Pixel 7 Pro) TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) ATT      17     Sent Write Request, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 361: 17 bytes on wire (136 bits), 17 bytes captured (136 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:21:48.355173000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:21:48.355173000 UTC
+    Epoch Arrival Time: 1720254108.355173000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 15.704391000 seconds]
+    [Time delta from previous displayed frame: 15.731260000 seconds]
+    [Time since reference or first frame: 286.873595000 seconds]
+    Frame Number: 361
+    Frame Length: 17 bytes (136 bits)
+    Capture Length: 17 bytes (136 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Sent (0)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+Bluetooth HCI H4
+    [Direction: Sent (0x00)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..00 .... .... .... = PB Flag: First Non-automatically Flushable Packet (0)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 12
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Source Device Name: Pixel 7 Pro]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination Device Name: Pm_USSE_F07A0]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 8
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0010 = Method: Write Request (0x12)
+    Handle: 0x0025 (Unknown: Unknown)
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    Value: aa0804c8ff
+
+0000  02 41 00 0c 00 08 00 04 00 12 25 00 aa 08 04 c8   .A........%.....
+0010  ff                                                .
+
+No.     Time           Source                Destination           Protocol Length Info
+    362 286.937781     TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) Google_aa:09:6a (Pixel 7 Pro) ATT      10     Rcvd Write Response, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 362: 10 bytes on wire (80 bits), 10 bytes captured (80 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:21:48.419359000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:21:48.419359000 UTC
+    Epoch Arrival Time: 1720254108.419359000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.064186000 seconds]
+    [Time delta from previous displayed frame: 0.064186000 seconds]
+    [Time since reference or first frame: 286.937781000 seconds]
+    Frame Number: 362
+    Frame Length: 10 bytes (80 bits)
+    Capture Length: 10 bytes (80 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Received (1)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+Bluetooth HCI H4
+    [Direction: Rcvd (0x01)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..10 .... .... .... = PB Flag: First Automatically Flushable Packet (2)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 5
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Source Device Name: Pm_USSE_F07A0]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination Device Name: Pixel 7 Pro]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 1
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Response (0x13)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0011 = Method: Write Response (0x13)
+    [Handle: 0x0025 (Unknown: Unknown)]
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    [Request in Frame: 361]
+
+0000  02 41 20 05 00 01 00 04 00 13                     .A .......
+
+No.     Time           Source                Destination           Protocol Length Info
+    364 298.305517     Google_aa:09:6a (Pixel 7 Pro) TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) ATT      17     Sent Write Request, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 364: 17 bytes on wire (136 bits), 17 bytes captured (136 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:21:59.787095000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:21:59.787095000 UTC
+    Epoch Arrival Time: 1720254119.787095000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 11.358368000 seconds]
+    [Time delta from previous displayed frame: 11.367736000 seconds]
+    [Time since reference or first frame: 298.305517000 seconds]
+    Frame Number: 364
+    Frame Length: 17 bytes (136 bits)
+    Capture Length: 17 bytes (136 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Sent (0)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+Bluetooth HCI H4
+    [Direction: Sent (0x00)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..00 .... .... .... = PB Flag: First Non-automatically Flushable Packet (0)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 12
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Source Device Name: Pixel 7 Pro]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination Device Name: Pm_USSE_F07A0]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 8
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0010 = Method: Write Request (0x12)
+    Handle: 0x0025 (Unknown: Unknown)
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    Value: aa0806c8ff
+
+0000  02 41 00 0c 00 08 00 04 00 12 25 00 aa 08 06 c8   .A........%.....
+0010  ff                                                .
+
+No.     Time           Source                Destination           Protocol Length Info
+    365 298.368200     TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) Google_aa:09:6a (Pixel 7 Pro) ATT      10     Rcvd Write Response, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 365: 10 bytes on wire (80 bits), 10 bytes captured (80 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:21:59.849778000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:21:59.849778000 UTC
+    Epoch Arrival Time: 1720254119.849778000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.062683000 seconds]
+    [Time delta from previous displayed frame: 0.062683000 seconds]
+    [Time since reference or first frame: 298.368200000 seconds]
+    Frame Number: 365
+    Frame Length: 10 bytes (80 bits)
+    Capture Length: 10 bytes (80 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Received (1)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+Bluetooth HCI H4
+    [Direction: Rcvd (0x01)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..10 .... .... .... = PB Flag: First Automatically Flushable Packet (2)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 5
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Source Device Name: Pm_USSE_F07A0]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination Device Name: Pixel 7 Pro]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 1
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Response (0x13)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0011 = Method: Write Response (0x13)
+    [Handle: 0x0025 (Unknown: Unknown)]
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    [Request in Frame: 364]
+
+0000  02 41 20 05 00 01 00 04 00 13                     .A .......
+
+No.     Time           Source                Destination           Protocol Length Info
+    367 310.787733     Google_aa:09:6a (Pixel 7 Pro) TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) ATT      17     Sent Write Request, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 367: 17 bytes on wire (136 bits), 17 bytes captured (136 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:22:12.269311000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:22:12.269311000 UTC
+    Epoch Arrival Time: 1720254132.269311000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 12.413970000 seconds]
+    [Time delta from previous displayed frame: 12.419533000 seconds]
+    [Time since reference or first frame: 310.787733000 seconds]
+    Frame Number: 367
+    Frame Length: 17 bytes (136 bits)
+    Capture Length: 17 bytes (136 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Sent (0)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+Bluetooth HCI H4
+    [Direction: Sent (0x00)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..00 .... .... .... = PB Flag: First Non-automatically Flushable Packet (0)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 12
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Source Device Name: Pixel 7 Pro]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination Device Name: Pm_USSE_F07A0]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 8
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0010 = Method: Write Request (0x12)
+    Handle: 0x0025 (Unknown: Unknown)
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    Value: aa080ac8ff
+
+0000  02 41 00 0c 00 08 00 04 00 12 25 00 aa 08 0a c8   .A........%.....
+0010  ff                                                .
+
+No.     Time           Source                Destination           Protocol Length Info
+    368 310.878538     TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) Google_aa:09:6a (Pixel 7 Pro) ATT      10     Rcvd Write Response, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 368: 10 bytes on wire (80 bits), 10 bytes captured (80 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:22:12.360116000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:22:12.360116000 UTC
+    Epoch Arrival Time: 1720254132.360116000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.090805000 seconds]
+    [Time delta from previous displayed frame: 0.090805000 seconds]
+    [Time since reference or first frame: 310.878538000 seconds]
+    Frame Number: 368
+    Frame Length: 10 bytes (80 bits)
+    Capture Length: 10 bytes (80 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Received (1)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+Bluetooth HCI H4
+    [Direction: Rcvd (0x01)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..10 .... .... .... = PB Flag: First Automatically Flushable Packet (2)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 5
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Source Device Name: Pm_USSE_F07A0]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination Device Name: Pixel 7 Pro]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 1
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Response (0x13)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0011 = Method: Write Response (0x13)
+    [Handle: 0x0025 (Unknown: Unknown)]
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    [Request in Frame: 367]
+
+0000  02 41 20 05 00 01 00 04 00 13                     .A .......
+
+No.     Time           Source                Destination           Protocol Length Info
+    402 348.979838     Google_aa:09:6a (Pixel 7 Pro) TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) ATT      17     Sent Write Request, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 402: 17 bytes on wire (136 bits), 17 bytes captured (136 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:22:50.461416000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:22:50.461416000 UTC
+    Epoch Arrival Time: 1720254170.461416000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 12.612597000 seconds]
+    [Time delta from previous displayed frame: 38.101300000 seconds]
+    [Time since reference or first frame: 348.979838000 seconds]
+    Frame Number: 402
+    Frame Length: 17 bytes (136 bits)
+    Capture Length: 17 bytes (136 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Sent (0)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+Bluetooth HCI H4
+    [Direction: Sent (0x00)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..00 .... .... .... = PB Flag: First Non-automatically Flushable Packet (0)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 12
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Source Device Name: Pixel 7 Pro]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination Device Name: Pm_USSE_F07A0]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 8
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0010 = Method: Write Request (0x12)
+    Handle: 0x0025 (Unknown: Unknown)
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    Value: aa0808c8ff
+
+0000  02 41 00 0c 00 08 00 04 00 12 25 00 aa 08 08 c8   .A........%.....
+0010  ff                                                .
+
+No.     Time           Source                Destination           Protocol Length Info
+    403 349.039428     TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) Google_aa:09:6a (Pixel 7 Pro) ATT      10     Rcvd Write Response, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 403: 10 bytes on wire (80 bits), 10 bytes captured (80 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:22:50.521006000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:22:50.521006000 UTC
+    Epoch Arrival Time: 1720254170.521006000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.059590000 seconds]
+    [Time delta from previous displayed frame: 0.059590000 seconds]
+    [Time since reference or first frame: 349.039428000 seconds]
+    Frame Number: 403
+    Frame Length: 10 bytes (80 bits)
+    Capture Length: 10 bytes (80 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Received (1)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+Bluetooth HCI H4
+    [Direction: Rcvd (0x01)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..10 .... .... .... = PB Flag: First Automatically Flushable Packet (2)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 5
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Source Device Name: Pm_USSE_F07A0]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination Device Name: Pixel 7 Pro]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 1
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Response (0x13)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0011 = Method: Write Response (0x13)
+    [Handle: 0x0025 (Unknown: Unknown)]
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    [Request in Frame: 402]
+
+0000  02 41 20 05 00 01 00 04 00 13                     .A .......
+
+No.     Time           Source                Destination           Protocol Length Info
+    405 352.029619     Google_aa:09:6a (Pixel 7 Pro) TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) ATT      17     Sent Write Request, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 405: 17 bytes on wire (136 bits), 17 bytes captured (136 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:22:53.511197000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:22:53.511197000 UTC
+    Epoch Arrival Time: 1720254173.511197000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 2.985252000 seconds]
+    [Time delta from previous displayed frame: 2.990191000 seconds]
+    [Time since reference or first frame: 352.029619000 seconds]
+    Frame Number: 405
+    Frame Length: 17 bytes (136 bits)
+    Capture Length: 17 bytes (136 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Sent (0)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+Bluetooth HCI H4
+    [Direction: Sent (0x00)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..00 .... .... .... = PB Flag: First Non-automatically Flushable Packet (0)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 12
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Source Device Name: Pixel 7 Pro]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination Device Name: Pm_USSE_F07A0]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 8
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0010 = Method: Write Request (0x12)
+    Handle: 0x0025 (Unknown: Unknown)
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    Value: aa080bc8ff
+
+0000  02 41 00 0c 00 08 00 04 00 12 25 00 aa 08 0b c8   .A........%.....
+0010  ff                                                .
+
+No.     Time           Source                Destination           Protocol Length Info
+    406 352.099417     TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) Google_aa:09:6a (Pixel 7 Pro) ATT      10     Rcvd Write Response, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 406: 10 bytes on wire (80 bits), 10 bytes captured (80 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:22:53.580995000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:22:53.580995000 UTC
+    Epoch Arrival Time: 1720254173.580995000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.069798000 seconds]
+    [Time delta from previous displayed frame: 0.069798000 seconds]
+    [Time since reference or first frame: 352.099417000 seconds]
+    Frame Number: 406
+    Frame Length: 10 bytes (80 bits)
+    Capture Length: 10 bytes (80 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Received (1)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+Bluetooth HCI H4
+    [Direction: Rcvd (0x01)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..10 .... .... .... = PB Flag: First Automatically Flushable Packet (2)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 5
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Source Device Name: Pm_USSE_F07A0]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination Device Name: Pixel 7 Pro]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 1
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Response (0x13)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0011 = Method: Write Response (0x13)
+    [Handle: 0x0025 (Unknown: Unknown)]
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    [Request in Frame: 405]
+
+0000  02 41 20 05 00 01 00 04 00 13                     .A .......
+
+No.     Time           Source                Destination           Protocol Length Info
+    408 358.445457     Google_aa:09:6a (Pixel 7 Pro) TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) ATT      17     Sent Write Request, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 408: 17 bytes on wire (136 bits), 17 bytes captured (136 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:22:59.927035000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:22:59.927035000 UTC
+    Epoch Arrival Time: 1720254179.927035000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 6.340468000 seconds]
+    [Time delta from previous displayed frame: 6.346040000 seconds]
+    [Time since reference or first frame: 358.445457000 seconds]
+    Frame Number: 408
+    Frame Length: 17 bytes (136 bits)
+    Capture Length: 17 bytes (136 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Sent (0)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+Bluetooth HCI H4
+    [Direction: Sent (0x00)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..00 .... .... .... = PB Flag: First Non-automatically Flushable Packet (0)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 12
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Source Device Name: Pixel 7 Pro]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination Device Name: Pm_USSE_F07A0]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 8
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0010 = Method: Write Request (0x12)
+    Handle: 0x0025 (Unknown: Unknown)
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    Value: aa0402c8ff
+
+0000  02 41 00 0c 00 08 00 04 00 12 25 00 aa 04 02 c8   .A........%.....
+0010  ff                                                .
+
+No.     Time           Source                Destination           Protocol Length Info
+    409 358.534313     TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) Google_aa:09:6a (Pixel 7 Pro) ATT      10     Rcvd Write Response, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 409: 10 bytes on wire (80 bits), 10 bytes captured (80 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:23:00.015891000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:23:00.015891000 UTC
+    Epoch Arrival Time: 1720254180.015891000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.088856000 seconds]
+    [Time delta from previous displayed frame: 0.088856000 seconds]
+    [Time since reference or first frame: 358.534313000 seconds]
+    Frame Number: 409
+    Frame Length: 10 bytes (80 bits)
+    Capture Length: 10 bytes (80 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Received (1)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+Bluetooth HCI H4
+    [Direction: Rcvd (0x01)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..10 .... .... .... = PB Flag: First Automatically Flushable Packet (2)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 5
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Source Device Name: Pm_USSE_F07A0]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination Device Name: Pixel 7 Pro]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 1
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Response (0x13)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0011 = Method: Write Response (0x13)
+    [Handle: 0x0025 (Unknown: Unknown)]
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    [Request in Frame: 408]
+
+0000  02 41 20 05 00 01 00 04 00 13                     .A .......
+
+No.     Time           Source                Destination           Protocol Length Info
+    411 380.141396     Google_aa:09:6a (Pixel 7 Pro) TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) ATT      17     Sent Write Request, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 411: 17 bytes on wire (136 bits), 17 bytes captured (136 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:23:21.622974000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:23:21.622974000 UTC
+    Epoch Arrival Time: 1720254201.622974000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 21.562452000 seconds]
+    [Time delta from previous displayed frame: 21.607083000 seconds]
+    [Time since reference or first frame: 380.141396000 seconds]
+    Frame Number: 411
+    Frame Length: 17 bytes (136 bits)
+    Capture Length: 17 bytes (136 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Sent (0)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+Bluetooth HCI H4
+    [Direction: Sent (0x00)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..00 .... .... .... = PB Flag: First Non-automatically Flushable Packet (0)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 12
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Source Device Name: Pixel 7 Pro]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination Device Name: Pm_USSE_F07A0]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 8
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0010 = Method: Write Request (0x12)
+    Handle: 0x0025 (Unknown: Unknown)
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    Value: aa0401c8ff
+
+0000  02 41 00 0c 00 08 00 04 00 12 25 00 aa 04 01 c8   .A........%.....
+0010  ff                                                .
+
+No.     Time           Source                Destination           Protocol Length Info
+    412 380.225024     TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) Google_aa:09:6a (Pixel 7 Pro) ATT      10     Rcvd Write Response, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 412: 10 bytes on wire (80 bits), 10 bytes captured (80 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:23:21.706602000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:23:21.706602000 UTC
+    Epoch Arrival Time: 1720254201.706602000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.083628000 seconds]
+    [Time delta from previous displayed frame: 0.083628000 seconds]
+    [Time since reference or first frame: 380.225024000 seconds]
+    Frame Number: 412
+    Frame Length: 10 bytes (80 bits)
+    Capture Length: 10 bytes (80 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Received (1)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+Bluetooth HCI H4
+    [Direction: Rcvd (0x01)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..10 .... .... .... = PB Flag: First Automatically Flushable Packet (2)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 5
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Source Device Name: Pm_USSE_F07A0]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination Device Name: Pixel 7 Pro]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 1
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Response (0x13)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0011 = Method: Write Response (0x13)
+    [Handle: 0x0025 (Unknown: Unknown)]
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    [Request in Frame: 411]
+
+0000  02 41 20 05 00 01 00 04 00 13                     .A .......
+
+No.     Time           Source                Destination           Protocol Length Info
+    414 390.008214     Google_aa:09:6a (Pixel 7 Pro) TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) ATT      17     Sent Write Request, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 414: 17 bytes on wire (136 bits), 17 bytes captured (136 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:23:31.489792000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:23:31.489792000 UTC
+    Epoch Arrival Time: 1720254211.489792000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 9.738948000 seconds]
+    [Time delta from previous displayed frame: 9.783190000 seconds]
+    [Time since reference or first frame: 390.008214000 seconds]
+    Frame Number: 414
+    Frame Length: 17 bytes (136 bits)
+    Capture Length: 17 bytes (136 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Sent (0)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+Bluetooth HCI H4
+    [Direction: Sent (0x00)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..00 .... .... .... = PB Flag: First Non-automatically Flushable Packet (0)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 12
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Source Device Name: Pixel 7 Pro]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination Device Name: Pm_USSE_F07A0]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 8
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0010 = Method: Write Request (0x12)
+    Handle: 0x0025 (Unknown: Unknown)
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    Value: aa0403c8ff
+
+0000  02 41 00 0c 00 08 00 04 00 12 25 00 aa 04 03 c8   .A........%.....
+0010  ff                                                .
+
+No.     Time           Source                Destination           Protocol Length Info
+    415 390.080322     TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) Google_aa:09:6a (Pixel 7 Pro) ATT      10     Rcvd Write Response, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 415: 10 bytes on wire (80 bits), 10 bytes captured (80 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:23:31.561900000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:23:31.561900000 UTC
+    Epoch Arrival Time: 1720254211.561900000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.072108000 seconds]
+    [Time delta from previous displayed frame: 0.072108000 seconds]
+    [Time since reference or first frame: 390.080322000 seconds]
+    Frame Number: 415
+    Frame Length: 10 bytes (80 bits)
+    Capture Length: 10 bytes (80 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Received (1)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+Bluetooth HCI H4
+    [Direction: Rcvd (0x01)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..10 .... .... .... = PB Flag: First Automatically Flushable Packet (2)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 5
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Source Device Name: Pm_USSE_F07A0]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination Device Name: Pixel 7 Pro]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 1
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Response (0x13)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0011 = Method: Write Response (0x13)
+    [Handle: 0x0025 (Unknown: Unknown)]
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    [Request in Frame: 414]
+
+0000  02 41 20 05 00 01 00 04 00 13                     .A .......
+
+No.     Time           Source                Destination           Protocol Length Info
+    417 398.341714     Google_aa:09:6a (Pixel 7 Pro) TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) ATT      17     Sent Write Request, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 417: 17 bytes on wire (136 bits), 17 bytes captured (136 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:23:39.823292000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:23:39.823292000 UTC
+    Epoch Arrival Time: 1720254219.823292000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 8.256004000 seconds]
+    [Time delta from previous displayed frame: 8.261392000 seconds]
+    [Time since reference or first frame: 398.341714000 seconds]
+    Frame Number: 417
+    Frame Length: 17 bytes (136 bits)
+    Capture Length: 17 bytes (136 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Sent (0)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+Bluetooth HCI H4
+    [Direction: Sent (0x00)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..00 .... .... .... = PB Flag: First Non-automatically Flushable Packet (0)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 12
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Source Device Name: Pixel 7 Pro]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination Device Name: Pm_USSE_F07A0]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 8
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0010 = Method: Write Request (0x12)
+    Handle: 0x0025 (Unknown: Unknown)
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    Value: aa0406c8ff
+
+0000  02 41 00 0c 00 08 00 04 00 12 25 00 aa 04 06 c8   .A........%.....
+0010  ff                                                .
+
+No.     Time           Source                Destination           Protocol Length Info
+    418 398.405564     TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) Google_aa:09:6a (Pixel 7 Pro) ATT      10     Rcvd Write Response, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 418: 10 bytes on wire (80 bits), 10 bytes captured (80 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:23:39.887142000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:23:39.887142000 UTC
+    Epoch Arrival Time: 1720254219.887142000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.063850000 seconds]
+    [Time delta from previous displayed frame: 0.063850000 seconds]
+    [Time since reference or first frame: 398.405564000 seconds]
+    Frame Number: 418
+    Frame Length: 10 bytes (80 bits)
+    Capture Length: 10 bytes (80 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Received (1)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+Bluetooth HCI H4
+    [Direction: Rcvd (0x01)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..10 .... .... .... = PB Flag: First Automatically Flushable Packet (2)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 5
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Source Device Name: Pm_USSE_F07A0]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination Device Name: Pixel 7 Pro]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 1
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Response (0x13)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0011 = Method: Write Response (0x13)
+    [Handle: 0x0025 (Unknown: Unknown)]
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    [Request in Frame: 417]
+
+0000  02 41 20 05 00 01 00 04 00 13                     .A .......
+
+No.     Time           Source                Destination           Protocol Length Info
+    420 406.374307     Google_aa:09:6a (Pixel 7 Pro) TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) ATT      17     Sent Write Request, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 420: 17 bytes on wire (136 bits), 17 bytes captured (136 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:23:47.855885000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:23:47.855885000 UTC
+    Epoch Arrival Time: 1720254227.855885000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 7.924519000 seconds]
+    [Time delta from previous displayed frame: 7.968743000 seconds]
+    [Time since reference or first frame: 406.374307000 seconds]
+    Frame Number: 420
+    Frame Length: 17 bytes (136 bits)
+    Capture Length: 17 bytes (136 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Sent (0)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+Bluetooth HCI H4
+    [Direction: Sent (0x00)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..00 .... .... .... = PB Flag: First Non-automatically Flushable Packet (0)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 12
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Source Device Name: Pixel 7 Pro]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination Device Name: Pm_USSE_F07A0]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 8
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0010 = Method: Write Request (0x12)
+    Handle: 0x0025 (Unknown: Unknown)
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    Value: aa0407c8ff
+
+0000  02 41 00 0c 00 08 00 04 00 12 25 00 aa 04 07 c8   .A........%.....
+0010  ff                                                .
+
+No.     Time           Source                Destination           Protocol Length Info
+    421 406.460928     TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) Google_aa:09:6a (Pixel 7 Pro) ATT      10     Rcvd Write Response, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 421: 10 bytes on wire (80 bits), 10 bytes captured (80 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:23:47.942506000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:23:47.942506000 UTC
+    Epoch Arrival Time: 1720254227.942506000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.086621000 seconds]
+    [Time delta from previous displayed frame: 0.086621000 seconds]
+    [Time since reference or first frame: 406.460928000 seconds]
+    Frame Number: 421
+    Frame Length: 10 bytes (80 bits)
+    Capture Length: 10 bytes (80 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Received (1)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+Bluetooth HCI H4
+    [Direction: Rcvd (0x01)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..10 .... .... .... = PB Flag: First Automatically Flushable Packet (2)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 5
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Source Device Name: Pm_USSE_F07A0]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination Device Name: Pixel 7 Pro]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 1
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Response (0x13)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0011 = Method: Write Response (0x13)
+    [Handle: 0x0025 (Unknown: Unknown)]
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    [Request in Frame: 420]
+
+0000  02 41 20 05 00 01 00 04 00 13                     .A .......
+
+No.     Time           Source                Destination           Protocol Length Info
+    423 412.121487     Google_aa:09:6a (Pixel 7 Pro) TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) ATT      17     Sent Write Request, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 423: 17 bytes on wire (136 bits), 17 bytes captured (136 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:23:53.603065000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:23:53.603065000 UTC
+    Epoch Arrival Time: 1720254233.603065000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 5.616512000 seconds]
+    [Time delta from previous displayed frame: 5.660559000 seconds]
+    [Time since reference or first frame: 412.121487000 seconds]
+    Frame Number: 423
+    Frame Length: 17 bytes (136 bits)
+    Capture Length: 17 bytes (136 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Sent (0)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+Bluetooth HCI H4
+    [Direction: Sent (0x00)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..00 .... .... .... = PB Flag: First Non-automatically Flushable Packet (0)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 12
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Source Device Name: Pixel 7 Pro]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination Device Name: Pm_USSE_F07A0]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 8
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0010 = Method: Write Request (0x12)
+    Handle: 0x0025 (Unknown: Unknown)
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    Value: aa0501c8ff
+
+0000  02 41 00 0c 00 08 00 04 00 12 25 00 aa 05 01 c8   .A........%.....
+0010  ff                                                .
+
+No.     Time           Source                Destination           Protocol Length Info
+    424 412.220865     TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) Google_aa:09:6a (Pixel 7 Pro) ATT      10     Rcvd Write Response, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 424: 10 bytes on wire (80 bits), 10 bytes captured (80 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:23:53.702443000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:23:53.702443000 UTC
+    Epoch Arrival Time: 1720254233.702443000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.099378000 seconds]
+    [Time delta from previous displayed frame: 0.099378000 seconds]
+    [Time since reference or first frame: 412.220865000 seconds]
+    Frame Number: 424
+    Frame Length: 10 bytes (80 bits)
+    Capture Length: 10 bytes (80 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Received (1)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+Bluetooth HCI H4
+    [Direction: Rcvd (0x01)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..10 .... .... .... = PB Flag: First Automatically Flushable Packet (2)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 5
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Source Device Name: Pm_USSE_F07A0]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination Device Name: Pixel 7 Pro]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 1
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Response (0x13)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0011 = Method: Write Response (0x13)
+    [Handle: 0x0025 (Unknown: Unknown)]
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    [Request in Frame: 423]
+
+0000  02 41 20 05 00 01 00 04 00 13                     .A .......
+
+No.     Time           Source                Destination           Protocol Length Info
+    426 418.304084     Google_aa:09:6a (Pixel 7 Pro) TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) ATT      17     Sent Write Request, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 426: 17 bytes on wire (136 bits), 17 bytes captured (136 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:23:59.785662000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:23:59.785662000 UTC
+    Epoch Arrival Time: 1720254239.785662000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 6.039089000 seconds]
+    [Time delta from previous displayed frame: 6.083219000 seconds]
+    [Time since reference or first frame: 418.304084000 seconds]
+    Frame Number: 426
+    Frame Length: 17 bytes (136 bits)
+    Capture Length: 17 bytes (136 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Sent (0)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+Bluetooth HCI H4
+    [Direction: Sent (0x00)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..00 .... .... .... = PB Flag: First Non-automatically Flushable Packet (0)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 12
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Source Device Name: Pixel 7 Pro]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination Device Name: Pm_USSE_F07A0]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 8
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0010 = Method: Write Request (0x12)
+    Handle: 0x0025 (Unknown: Unknown)
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    Value: aa0507c8ff
+
+0000  02 41 00 0c 00 08 00 04 00 12 25 00 aa 05 07 c8   .A........%.....
+0010  ff                                                .
+
+No.     Time           Source                Destination           Protocol Length Info
+    427 418.386317     TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) Google_aa:09:6a (Pixel 7 Pro) ATT      10     Rcvd Write Response, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 427: 10 bytes on wire (80 bits), 10 bytes captured (80 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:23:59.867895000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:23:59.867895000 UTC
+    Epoch Arrival Time: 1720254239.867895000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.082233000 seconds]
+    [Time delta from previous displayed frame: 0.082233000 seconds]
+    [Time since reference or first frame: 418.386317000 seconds]
+    Frame Number: 427
+    Frame Length: 10 bytes (80 bits)
+    Capture Length: 10 bytes (80 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Received (1)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+Bluetooth HCI H4
+    [Direction: Rcvd (0x01)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..10 .... .... .... = PB Flag: First Automatically Flushable Packet (2)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 5
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Source Device Name: Pm_USSE_F07A0]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination Device Name: Pixel 7 Pro]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 1
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Response (0x13)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0011 = Method: Write Response (0x13)
+    [Handle: 0x0025 (Unknown: Unknown)]
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    [Request in Frame: 426]
+
+0000  02 41 20 05 00 01 00 04 00 13                     .A .......
+
+No.     Time           Source                Destination           Protocol Length Info
+    429 453.980270     Google_aa:09:6a (Pixel 7 Pro) TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) ATT      17     Sent Write Request, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 429: 17 bytes on wire (136 bits), 17 bytes captured (136 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:24:35.461848000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:24:35.461848000 UTC
+    Epoch Arrival Time: 1720254275.461848000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 35.550317000 seconds]
+    [Time delta from previous displayed frame: 35.593953000 seconds]
+    [Time since reference or first frame: 453.980270000 seconds]
+    Frame Number: 429
+    Frame Length: 17 bytes (136 bits)
+    Capture Length: 17 bytes (136 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Sent (0)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+Bluetooth HCI H4
+    [Direction: Sent (0x00)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..00 .... .... .... = PB Flag: First Non-automatically Flushable Packet (0)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 12
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Source Device Name: Pixel 7 Pro]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination Device Name: Pm_USSE_F07A0]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 8
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0010 = Method: Write Request (0x12)
+    Handle: 0x0025 (Unknown: Unknown)
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    Value: aa070400ff
+
+0000  02 41 00 0c 00 08 00 04 00 12 25 00 aa 07 04 00   .A........%.....
+0010  ff                                                .
+
+No.     Time           Source                Destination           Protocol Length Info
+    430 454.071685     TexasInstrum_6f:07:a0 (Pm_USSE_F07A0) Google_aa:09:6a (Pixel 7 Pro) ATT      10     Rcvd Write Response, Handle: 0x0025 (Unknown: Unknown)
+
+Frame 430: 10 bytes on wire (80 bits), 10 bytes captured (80 bits)
+    Encapsulation type: Bluetooth H4 with linux header (99)
+    Arrival Time: Jul  6, 2024 04:24:35.553263000 EDT
+    UTC Arrival Time: Jul  6, 2024 08:24:35.553263000 UTC
+    Epoch Arrival Time: 1720254275.553263000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.091415000 seconds]
+    [Time delta from previous displayed frame: 0.091415000 seconds]
+    [Time since reference or first frame: 454.071685000 seconds]
+    Frame Number: 430
+    Frame Length: 10 bytes (80 bits)
+    Capture Length: 10 bytes (80 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    Point-to-Point Direction: Received (1)
+    [Protocols in frame: bluetooth:hci_h4:bthci_acl:btl2cap:btatt]
+Bluetooth
+    [Source: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Destination: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+Bluetooth HCI H4
+    [Direction: Rcvd (0x01)]
+    HCI Packet Type: ACL Data (0x02)
+Bluetooth HCI ACL Packet
+    .... 0000 0100 0001 = Connection Handle: 0x041
+    ..10 .... .... .... = PB Flag: First Automatically Flushable Packet (2)
+    00.. .... .... .... = BC Flag: Point-To-Point (0)
+    Data Total Length: 5
+    Data
+    [Connect in frame: 260]
+    [Source BD_ADDR: TexasInstrum_6f:07:a0 (40:2e:71:6f:07:a0)]
+    [Source Device Name: Pm_USSE_F07A0]
+    [Source Role: Unknown (0)]
+    [Destination BD_ADDR: Google_aa:09:6a (d4:3a:2c:aa:09:6a)]
+    [Destination Device Name: Pixel 7 Pro]
+    [Destination Role: Unknown (0)]
+    [Current Mode: Unknown (-1)]
+Bluetooth L2CAP Protocol
+    Length: 1
+    CID: Attribute Protocol (0x0004)
+Bluetooth Attribute Protocol
+    Opcode: Write Response (0x13)
+        0... .... = Authentication Signature: False
+        .0.. .... = Command: False
+        ..01 0011 = Method: Write Response (0x13)
+    [Handle: 0x0025 (Unknown: Unknown)]
+        [Service UUID: bc2f4cc6aaef43519034d66268e328f0]
+        [UUID: 06d1e5e779ad4a718faa373789f7d93c]
+    [Request in Frame: 429]
+
+0000  02 41 20 05 00 01 00 04 00 13                     .A .......
