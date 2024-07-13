@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android = "http://schemas.android.com/apk/res/android"
-    android:versionCode = "1720385464"
-    android:versionName = "07-JUL-2024 04:51:04 PM">
+    android:versionCode = "1720834992"
+    android:versionName = "12-JUL-2024 09:43:12 PM">
 
     <uses-permission android:name = "android.permission.BLUETOOTH" />
     <uses-permission android:name = "android.permission.BLUETOOTH_CONNECT" />

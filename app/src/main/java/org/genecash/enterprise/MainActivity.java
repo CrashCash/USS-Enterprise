@@ -44,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
     private BluetoothDevice device = null;
     private BluetoothGatt btGatt;
     private boolean scanning;
+    private Handler handler;
+    private boolean blinking;
 
     // these are hardcoded in the Playmobil app, so I feel safe hardcoding them here
     UUID uuid_chr = UUID.fromString("06d1e5e7-79ad-4a71-8faa-373789f7d93c");
@@ -106,6 +108,8 @@ public class MainActivity extends AppCompatActivity {
                 btGatt.discoverServices();
             } else if (newState == BluetoothProfile.STATE_DISCONNECTED) {
                 log("disconnected from the GATT Server");
+                status("Lost communications with starship");
+                startScan();
             }
         }
 
@@ -115,6 +119,8 @@ public class MainActivity extends AppCompatActivity {
             log("status: " + status);
             if (status == BluetoothGatt.GATT_SUCCESS) {
                 status("Communication established with starship");
+                blinking = true;
+                runOnUiThread(() -> blinkinlights());
                 if (false) {
                     // spew a ton of debugging barf
                     for (BluetoothGattService service : btGatt.getServices()) {
@@ -209,10 +215,15 @@ public class MainActivity extends AppCompatActivity {
             btn.setOnClickListener(v -> command(cmd.getBytes()));
         }
 
+        // for delayed actions
+        handler = new Handler(Looper.getMainLooper());
+
         // hook up blinky lights
-        blinkies = Arrays.asList(findViewById(R.id.blinky1), findViewById(R.id.blinky2), findViewById(R.id.blinky3),
-                                 findViewById(R.id.blinky4), findViewById(R.id.blinky5), findViewById(R.id.blinky6));
-        blinkinlights();
+        blinkies = Arrays.asList(findViewById(R.id.blinky1), findViewById(R.id.blinky2),
+                                 findViewById(R.id.blinky3), findViewById(R.id.blinky4),
+                                 findViewById(R.id.blinky5), findViewById(R.id.blinky6),
+                                 findViewById(R.id.blinky7), findViewById(R.id.blinky8));
+        blinking = false;
 
         // volume slider
         SeekBar sldVolume = findViewById(R.id.volume);
@@ -275,17 +286,9 @@ public class MainActivity extends AppCompatActivity {
             BluetoothManager bluetoothManager = getSystemService(BluetoothManager.class);
             BluetoothAdapter bluetoothAdapter = bluetoothManager.getAdapter();
             if (bluetoothAdapter.isEnabled()) {
-                txtStatus.setText("Attempting to locate starship communication device");
+                // we might be called from a non-UI thread
+                status("Attempting to locate starship communication device");
                 bleScanner = bluetoothAdapter.getBluetoothLeScanner();
-                Handler handler = new Handler(Looper.getMainLooper());
-                handler.postDelayed(() -> {
-                    // stop scanning after a predefined scan period.
-                    if (device == null) {
-                        bleScanner.stopScan(leScanCallback);
-                        log("device not found");
-                        txtStatus.setText("Unable to find starship communication device");
-                    }
-                }, 10000);
                 bleScanner.startScan(leScanCallback);
             } else {
                 // ask user to turn bluetooth on
@@ -318,6 +321,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         log("");
+
+        // stop blinkylights
+        blinking = false;
+        handler.removeCallbacksAndMessages(null);
+
         // shut down Bluetooth gracefully
         unregisterReceiver(btReceiver);
         if (btGatt != null) {
@@ -330,6 +338,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         log("");
+
+        // stop blinkylights
+        blinking = false;
+        handler.removeCallbacksAndMessages(null);
+
         // shut down Bluetooth gracefully
         try {
             // no way to tell if a BroadcastReceiver is registered or not
@@ -364,7 +377,9 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // send it!
-        if (btGatt != null) {
+        if (btGatt == null) {
+            startScan();
+        } else {
             BluetoothGattService btsvc = btGatt.getService(uuid_svc);
             if (btsvc != null) {
                 BluetoothGattCharacteristic btchr = btsvc.getCharacteristic(uuid_chr);
@@ -376,16 +391,17 @@ public class MainActivity extends AppCompatActivity {
 
     // continuously flash blinking lights
     void blinkinlights() {
-        Button x = blinkies.get(blinky);
-        x.setPressed(false);
-        blinky += 1;
-        if (blinky >= blinkies.size()) {
-            blinky = 0;
+        if (blinking) {
+            Button x = blinkies.get(blinky);
+            x.setPressed(false);
+            blinky += 1;
+            if (blinky >= blinkies.size()) {
+                blinky = 0;
+            }
+            x = blinkies.get(blinky);
+            x.setPressed(true);
+            handler.postDelayed(this::blinkinlights, 750);
         }
-        x = blinkies.get(blinky);
-        x.setPressed(true);
-        Handler handler = new Handler(Looper.getMainLooper());
-        handler.postDelayed(this::blinkinlights, 500);
     }
 
     // safely set status message from another thread
@@ -406,7 +422,7 @@ public class MainActivity extends AppCompatActivity {
             call_method = ste.getMethodName();
             if (!methods.contains(call_method)) {
                 call_class = ste.getClassName();
-                call_class = call_class.substring(call_class.lastIndexOf(".") + 1);
+                //call_class = call_class.substring(call_class.lastIndexOf(".") + 1);
                 return pkg + call_class + ":" + call_method + ":";
             }
         }
